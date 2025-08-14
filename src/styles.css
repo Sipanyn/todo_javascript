@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+}
+
+.notActiveSettingMenu {
+  transition: all 300ms ease;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  transform: translateX(-200px);
+}
+.activeSettingMenu {
+  transition: all 300ms ease;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  opacity: 1;
+  transform: translateX(0);
+}
+.notActiveSettingMenuUl {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+}
+.activeSettingMenuUl {
+  opacity: 1;
+  visibility: visible;
+  transition: all 300ms ease;
+}
+.hiddenAddModal {
+  transform: translateY(-500px);
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.showAddModal {
+  transform: translateY(0);
+  transition: all 300ms ease;
+  opacity: 1;
+}
+.blurHidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+.blurShow {
+  opacity: 1;
+  visibility: visible;
+  transition: all 300ms ease;
+  background: rgba(0, 0, 0, 0.3); /* dark overlay */
+  backdrop-filter: blur(5px); /* blur background */
+}
+.notActiveBg {
+  background: none;
+  transition: all 300ms ease;
+}
+.notActiveSortUl {
+  transition: all 300ms ease;
+  opacity: 0;
+  position: absolute;
+  top: 48px;
+  transform: translateX(-200px);
+}
+.activeSortUl {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  transform: translateX(0);
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.hiddenDotsMenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+.up {
+  transform: rotate(180deg);
+  transition: all 300ms ease;
+}
+/* .showDotsMenu {
+  opacity: 1;
+  visibility: visible;
+  transition: all 300ms ease;
+} */
+input:valid {
+  border-bottom: 2px solid rgb(27, 118, 27);
+}
+input:invalid {
+  border-bottom: 2px solid red;
+}

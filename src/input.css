@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+  --color-GreyGreen: #cad2c5;
+  --color-SapGreen: #84a98c;
+  --color-Sepia: #52796f;
+  --color-CoolGrey: #2f3e46;
+  --color-red: oklch(63.7% 0.237 25.331);
+  --color-white: #fdfefe;
+  --color-theme1: #cfe1b9;
+  --color-theme2: #b5c99a;
+  --color-theme3: #086375;
+}
+@custom-variant dark (&:where(.dark, .dark *));
