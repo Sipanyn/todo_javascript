@@ -63,13 +63,14 @@ body {
   position: absolute;
   top: 48px;
   transform: translateX(-200px);
+  visibility: hidden;
 }
 .activeSortUl {
   opacity: 1;
   position: absolute;
   left: 0;
   top: 48px;
-  transform: translateX(0);
+  transform: translateX(10px);
   visibility: visible;
 }
 .done {
