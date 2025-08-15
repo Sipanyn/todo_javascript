@@ -9,6 +9,7 @@ body {
   position: absolute;
   top: 100px;
   transform: translateX(-200px);
+  visibility: hidden;
 }
 .activeSettingMenu {
   transition: all 300ms ease;
@@ -16,7 +17,8 @@ body {
   top: 100px;
   left: 0px;
   opacity: 1;
-  visibility: hidden;
+  visibility: visible;
+
   transform: translateX(0);
 }
 .notActiveSettingMenuUl {
@@ -68,6 +70,7 @@ body {
   left: 0;
   top: 48px;
   transform: translateX(0);
+  visibility: visible;
 }
 .done {
   text-decoration: line-through;
