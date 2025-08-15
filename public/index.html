@@ -46,7 +46,7 @@
         </svg>
         <!-- settingMenu -->
         <ul
-          class="setting_menu notActiveSettingMenu rounded-sm bg-SapGreen dark:bg-Sepia pt-6 p-2.5 *:cursor-pointer relative w-full sm:w-fit"
+          class="setting_menu notActiveSettingMenu rounded-sm bg-SapGreen dark:bg-Sepia pt-6 p-2.5 *:cursor-pointer relative w-full sm:w-fit z-5"
         >
           <li>
             <p
@@ -283,7 +283,7 @@
         <!-- difficulty + dots -->
         <div class="flex flex-row justify-between">
           <p class="font-extralight">easy</p>
-          <div class="relative">
+          <div class="relative -z-4">
             <svg onclick="ToggleDotsMenu()" class="dots size-5 cursor-pointer">
               <use href="sprite.svg#dots"></use>
               <ul
